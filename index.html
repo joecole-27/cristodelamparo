@@ -47,12 +47,16 @@
 
 <section id="galeria">
   <h2>Galería</h2>
-  <div class="gallery" id="carousel">
-    <img src="images/ermitaheader.jpg" alt="Vista de la ermita">
-    <img src="images/ermita1.jpg" alt="Vista de la ermita">
-    <img src="images/ermita2.jpg" alt="Vista de la ermita">
+  <div class="gallery">
+    <img src="images/ermita1.jpg" alt="Vista de la ermita" onclick="openLightbox(this.src)">
+    <img src="images/ermita2.jpg" alt="Vista de la ermita" onclick="openLightbox(this.src)">
   </div>
 </section>
+
+<!-- Lightbox oculto -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" src="" alt="Imagen ampliada">
+</div>
 
 <section id="mapa">
   <h2>Ubicación</h2>
